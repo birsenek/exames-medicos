@@ -6,7 +6,7 @@ let n = 0
 
 const imageArea = document.querySelector('.ressonancia-img')
 const newImg = document.createElement('img')
-newImg.src = imgLinks[0][n]
+newImg.src = `//images.weserv.nl/?url=${imgLinks[0][n]}`
 imageArea.appendChild(newImg)
 
 
@@ -16,20 +16,20 @@ document.addEventListener('keydown', e => {
         if (n > 1546) {
             return n = 1546
         }
-        newImg.src = imgLinks[0][n]
+        newImg.src =  `//images.weserv.nl/?url=${imgLinks[0][n]}`
     } else if (e.key == "ArrowLeft") {
         n--
         if (n < 0) {
             return n = 0
         }
-        newImg.src = imgLinks[0][n]
+        newImg.src =  `//images.weserv.nl/?url=${imgLinks[0][n]}`
     }
 })
 
 const forwardButton = document.querySelector('.forward')
 forwardButton.addEventListener('click', e => {
     n++
-    newImg.src = imgLinks[0][n]
+    newImg.src =  `//images.weserv.nl/?url=${imgLinks[0][n]}`
 })
 
 const backwardsButton = document.querySelector('.backwards')
@@ -38,5 +38,5 @@ backwardsButton.addEventListener('click', e => {
     if (n < 0) {
         return n = 0
     }
-    newImg.src = imgLinks[0][n]
+    newImg.src =  `//images.weserv.nl/?url=${imgLinks[0][n]}`
 })
