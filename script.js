@@ -6,7 +6,7 @@ let n = 0
 
 const imageArea = document.querySelector('.ressonancia-img')
 const newImg = document.createElement('img')
-newImg.src = "//megaimagem.zapto.org/jpeg/2020/09/22/15185645/5382682/0001.jpg"
+newImg.src = `//images.weserv.nl/?url=${imgLinks[0][n]}`
 imageArea.appendChild(newImg)
 
 
